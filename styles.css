@@ -43,7 +43,7 @@ body {
     background: white;
     max-width: 800px;
     margin: 20px auto;
-    height: 1838px;
+    min-height: 100vh;
     padding: 20px 0;
     border: 10px groove rgb(22, 14, 131);
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .secciones {
-    padding: 10px 40px;
+    padding: 10px 5%;
 }
 
 .secciones p {
@@ -97,13 +97,14 @@ body {
 .habilidades {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
-.izq {
-    flex: 1;
+.izq, .derecha {
+    flex: 1 1 45%;
     line-height: 2;
-    margin-right: 40px;
+    margin: 10px;
 }
 
 .izq h3 {
@@ -112,9 +113,7 @@ body {
 }
 
 .derecha {
-    flex: 1;
-    margin-right: 20px;
-    line-height: 2;
+  
     text-align: justify;
 }
 
@@ -125,7 +124,7 @@ body {
 
 footer {
     background-color: rgb(7, 4, 46);
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
